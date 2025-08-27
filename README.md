@@ -1,4 +1,8 @@
 🏠 (구) 세이프 홈즈 랜딩페이지 퍼블리싱
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat&logo=sass&logoColor=white)
+
 
 📌 참고 자료
 
