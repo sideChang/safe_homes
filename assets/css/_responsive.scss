@@ -1,18 +1,155 @@
 /*1024px*/
 @media (max-width: 1024px) {
+   .header, .footer{
+      width: 100%;
+   }
+   .header{
+      padding: 0 24px;
+      
+   }
+   .footer{
+      padding: 24px;
+   }
+   main{
+      .main_img_wrapper .myhome{
+         .myhome_intro{
+            font-size: 48px;
+         }
+         .myhome_link{
+            display: none;
+         }
+      } 
+      .section_wrapper{
+         margin: 72px 28px 0;
 
+         
+         
+         &.section_wrapper--all{
+            margin: 72px 0 0;
+         }
+         &.section_wrapper--wide{
+            margin: 72px 28px 0;
+         }
+
+
+         .first_section_content{
+            justify-content: flex-start;
+         }
+         .third_section_content{
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 25px;
+
+            div{
+               text-align: center;
+            }
+            &.third_section_content--reverse{
+               flex-direction: column;
+            }
+            .content_highlight--text{
+               font-size: 24px;
+            }
+
+           
+         }
+
+         .fourth_section_content{
+            justify-content: center;
+         }
+
+
+
+
+      }
+      .section_title{
+         font-size: 32px;
+      }
+      
+   }
+   
 }
 
 /*768px*/
 @media (max-width: 768px) {
+
+   main{
+
+      .main_img_wrapper .myhome{
+         .myhome_intro{
+            font-size: 36px;
+         }
+         
+      } 
+      .section_title{
+         font-size: 20px;
+      }
+      .section_wrapper{
+
+         &.section_wrapper--wide{
+            margin: 72px 14px 0;
+         }
+
+
+         .first_section_content{
+            justify-content: center;
+         }
+         .second_section_content{
+            justify-content: center;
+         }  
+         
+         .fourth_section_content{
+            justify-content: center;
+         }
+         .fifth_section_content{
+            margin: 16px 12px 0;
+            .user_card
+            {
+               width: 100%;
+               min-width: 400px;
+               font-size: 18px;
+               
+            }
+         } 
+
+         .last_section_content{
+            .content_text{
+               font-size: 48px;
+            }
+         } 
+      }
+      
+   }
 
     
 }
 
 /* 480 px*/
 @media (max-width: 480px) {
+   main{
+      .main_img_wrapper .myhome{
+         .myhome_intro{
+            font-size: 24px;
+         }
+         
+      }
+      .section_wrapper{
+         .third_section_content{
 
-   body{
-    font-size: 12px;
+            .content_title{
+               font-size: 36px;
+            }
+            
+            .content_desc{
+               font-size: 18px;
+            }
+         }
+
+         .last_section_content{
+            .content_text{
+               font-size: 36px;
+            }
+         } 
+      } 
    }
 }
