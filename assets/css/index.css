@@ -22,6 +22,8 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
   font-family: "SpoqaHanSansNeo", sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -32,6 +34,9 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  position: relative;
+  overflow-x: hidden;
+  min-width: 480px;
 }
 
 ol, ul {
@@ -51,6 +56,18 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 @font-face {
@@ -83,6 +100,276 @@ table {
   font-weight: 700;
   font-style: normal;
 }
+.header_wrapper, .header, .header .header--sideLeft, .header .header--sideRight, main .main_img_wrapper, main .main_img_wrapper .myhome, main .section_title, main .section_wrapper .fourth_section_content, main .section_wrapper .fifth_section_content .user_card .user_info, main .section_wrapper .last_section_content {
+  display: flex;
+  align-items: center;
+}
+
+.header .header_title, main .section_title, main .section_wrapper .second_section_content div h3, main .section_wrapper .third_section_content .content_highlight--text, main .section_wrapper .fourth_section_content .content__card .price, main .section_wrapper .last_section_content .content_btn, main .none_text {
+  color: #0E7159;
+}
+
+main .section_wrapper .content_desc, main .section_wrapper .third_section_content .content_desc {
+  color: #6B7684;
+}
+
+.header .header--sideRight button, main .section_wrapper .fourth_section_content .content__card .card_btn, main .section_wrapper .last_section_content {
+  background-color: #0E7159;
+}
+
+main .section_wrapper .fourth_section_content .content__card, main .section_wrapper .fifth_section_content .user_card {
+  background-color: #F2F3F4;
+}
+
+.header_wrapper {
+  justify-content: center;
+}
+
+.header {
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  max-width: 1112px;
+  font-weight: 700;
+}
+.header .header--sideLeft {
+  gap: 12px;
+  font-size: 28px;
+}
+.header .header--sideRight {
+  gap: 32px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.header .header--sideRight button {
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 24px;
+}
+.header .header_title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main .main_img_wrapper {
+  justify-content: center;
+  position: relative;
+}
+main .main_img_wrapper .main_img {
+  width: 100vw;
+  height: 768px;
+}
+main .main_img_wrapper .myhome {
+  justify-content: center;
+  gap: 48px;
+  flex-direction: column;
+  position: absolute;
+  z-index: 99;
+  text-align: center;
+  color: #fff;
+}
+main .main_img_wrapper .myhome .myhome_intro {
+  font-size: 60px;
+  font-weight: 700;
+}
+main .main_img_wrapper .myhome .myhome_link {
+  font-size: 24px;
+}
+main .main_img_wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+}
+main .section_title {
+  font-size: 48px;
+  justify-content: center;
+}
+main .section_title--highlight {
+  font-weight: 700;
+}
+main .section_wrapper {
+  max-width: 975px;
+  margin: 72px auto 0;
+}
+main .section_wrapper.section_wrapper--wide {
+  max-width: 1084px;
+}
+main .section_wrapper.section_wrapper--all {
+  max-width: 100%;
+}
+main .section_wrapper .content_title {
+  font-size: 20px;
+  font-weight: 700;
+}
+main .section_wrapper .content_desc {
+  font-size: 16px;
+}
+main .section_wrapper .first_section_content {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-top: 52px;
+}
+main .section_wrapper .first_section_content div {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  gap: 20px;
+  width: 293px;
+}
+main .section_wrapper .second_section_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin-top: 70px;
+}
+main .section_wrapper .second_section_content div {
+  width: 293px;
+}
+main .section_wrapper .second_section_content div h3 {
+  font-size: 20px;
+}
+main .section_wrapper .second_section_content div .content_title {
+  margin-top: 10px;
+}
+main .section_wrapper .second_section_content div .content_desc {
+  margin-top: 16px;
+}
+main .section_wrapper .third_section_content {
+  display: flex;
+  justify-content: space-between;
+}
+main .section_wrapper .third_section_content.third_section_content--reverse {
+  flex-direction: row-reverse;
+}
+main .section_wrapper .third_section_content .content_highlight--text {
+  font-size: 24px;
+  font-weight: 700;
+}
+main .section_wrapper .third_section_content .content_title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+main .section_wrapper .third_section_content .content_desc {
+  font-size: 24px;
+  margin-top: 32px;
+}
+main .section_wrapper .fourth_section_content {
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 36px;
+}
+main .section_wrapper .fourth_section_content .content__card {
+  border-radius: 16px;
+  padding: 30px 24px 24px;
+  max-width: 340px;
+  box-sizing: border-box;
+}
+main .section_wrapper .fourth_section_content .content__card .card_title {
+  font-size: 24px;
+  color: #333D4B;
+}
+main .section_wrapper .fourth_section_content .content__card .card_desc {
+  font-size: 16px;
+  color: #6B7684;
+  margin-top: 28px;
+}
+main .section_wrapper .fourth_section_content .content__card .price {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 38px;
+}
+main .section_wrapper .fourth_section_content .content__card .price_info {
+  font-size: 16px;
+  color: #6B7684;
+  margin-top: 15px;
+}
+main .section_wrapper .fourth_section_content .content__card .card_btn {
+  width: 100%;
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 24px;
+}
+main .section_wrapper .fifth_section_content {
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+  margin-top: 36px;
+  position: relative;
+}
+main .section_wrapper .fifth_section_content .user_card {
+  min-width: 680px;
+  width: 680px;
+  padding: 60px;
+  border-radius: 16px;
+  font-size: 24px;
+}
+main .section_wrapper .fifth_section_content .user_card .user_info {
+  gap: 16px;
+  color: #6B7684;
+}
+main .section_wrapper .fifth_section_content .user_card .user_info .user_name {
+  color: #333D4B;
+}
+main .section_wrapper .fifth_section_content .user_card .user_info div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+main .section_wrapper .fifth_section_content .user_card .user_review {
+  color: #6B7684;
+  margin-top: 32px;
+}
+main .section_wrapper .last_section_content {
+  gap: 60px;
+  justify-content: center;
+  flex-direction: column;
+  height: 610px;
+}
+main .section_wrapper .last_section_content .content_text {
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+}
+main .section_wrapper .last_section_content .content_btn {
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+main .none_text {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 32px;
+}
+main .none_text.none_text--second {
+  margin-top: 64px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  max-width: 1112px;
+  margin: 0 auto;
+  gap: 18px;
+}
+.footer .cop_info {
+  color: #6B7684;
+}
+
 /*1024px*/
 /*768px*/
 /* 480 px*/

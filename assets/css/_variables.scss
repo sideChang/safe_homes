@@ -1,0 +1,28 @@
+%flex-center {
+    display: flex;
+    align-items: center;
+}
+
+%main-color {
+    color: #0E7159;
+}
+%sub-color {
+    color: #6B7684;
+}
+
+
+%main-bgColor {
+    background-color: #0E7159;
+}
+
+%card-bgColor {
+    background-color: #F2F3F4;
+}
+%scroll{
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    
+    &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+}
