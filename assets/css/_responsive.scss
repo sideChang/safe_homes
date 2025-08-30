@@ -65,7 +65,9 @@
       .section_title{
          font-size: 32px;
       }
-      
+      .none_text{
+         display: none;
+      }
    }
    
 }
@@ -144,6 +146,12 @@
                font-size: 18px;
             }
          }
+
+         .fifth_section_content{
+            .user_card{
+               padding: 30px;
+            }
+         } 
 
          .last_section_content{
             .content_text{

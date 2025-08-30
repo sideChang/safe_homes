@@ -35,7 +35,6 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   position: relative;
-  overflow-x: hidden;
   min-width: 420px;
 }
 
@@ -156,7 +155,7 @@ main .main_img_wrapper {
   position: relative;
 }
 main .main_img_wrapper .main_img {
-  width: 100vw;
+  width: 100%;
   height: 768px;
 }
 main .main_img_wrapper .myhome {
@@ -353,6 +352,7 @@ main .none_text {
   font-weight: 700;
   text-align: center;
   margin-top: 32px;
+  cursor: pointer;
 }
 main .none_text.none_text--second {
   margin-top: 64px;
@@ -420,6 +420,9 @@ main .none_text.none_text--second {
   main .section_title {
     font-size: 32px;
   }
+  main .none_text {
+    display: none;
+  }
 }
 /*768px*/
 @media (max-width: 768px) {
@@ -463,6 +466,9 @@ main .none_text.none_text--second {
   }
   main .section_wrapper .third_section_content .content_desc {
     font-size: 18px;
+  }
+  main .section_wrapper .fifth_section_content .user_card {
+    padding: 30px;
   }
   main .section_wrapper .last_section_content .content_text {
     font-size: 36px;
